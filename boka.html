@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Välkommen till Nodic Hotell</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="center">Nordic Stay</h1>
+    </header>
+
+    <nav class="nav-container">
+        <a href="index.html">Välkommen</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="boka.html">Boka</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="item">
+
+                <form action="book-confimation.html" method="POST" class="centered-form">
+                    <fieldset>
+                        <legend>Boka ditt rum</legend>
+                        <label for="forname">Förnamn:</label>
+                        <input type="text" id="forname" name="forname" minlength="4" required>
+                        <br>
+                        <label for="aftername">Efternamn:</label>
+                        <input type="text" id="aftername" name="aftername" minlength="4" required>
+                        <br>
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="mobilenumber">Mobilnummer:</label>
+                        <input type="number" id="mobilenumber" min="99" max="0799999999" name="mobilenumber">
+                        <br>
+                        <label for="roomtype">Rumstyp</label>
+                        <select id="roomtype" name="roomtype">
+                            <option value="enkel">Enkelrum</option>
+                            <option value="dubbel">Dubbelrum</option>
+                            <option value="suit">Suit</option>
+                        </select>
+                        <br>
+                        <label for="arrivaldate">Incheckningsdatumn:</label>
+                        <input type="date" id="arrivaldate" name="arrival date" required>
+
+                        <label for="departuredate">Utcheckningsdatumn:</label>
+                        <input type="date" id="departuredate" name="departure date" required>
+                        <br>
+                        <button type="submit"><span>Skicka</span></button>
+                    </fieldset>
+                </form>
+            </div>
+            <article class="item center">
+                <h2>Kolla exemplar av våra rum:</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="bilder/room1.webp" class="image-85" alt="bedroom picture 1" style="width:100%">
+                        <div class="text">Familj storlek</div>
+                    </div>
+
+                    <div class="mySlides fade" style="display: block;">
+                        <div class="numbertext">2 / 3</div>
+                        <img class="image-85" src="bilder/room2.webp" alt="bedroom picture 2" style="width:100%">
+                        <div class="text">2 personer storlek</div>
+                    </div>
+
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext">3 / 3</div>
+                        <img class="image-85 " src="bilder/room3.webp" alt="bedroom picture 3" style="width:100%">
+                        <div class="text">1 person storlek</div>
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot active" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p class="center">Frostpalatset | flemingsgatan 75 | 12364 Kiruna 01-43 98 76</p>
+    </footer>
+    <script src="showslides.js"></script>
+
+</body>
+
+</html>

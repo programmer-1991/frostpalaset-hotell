@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Välkommen till Nodic Hotell</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="center">Nordic Stay</h1>
+    </header>
+
+    <nav class="nav-container">
+        <a href="index.html">Välkommen</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="boka.html">Boka</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="item">
+                <form action="kontakt-confirmation.html" method="POST">
+                    <fieldset>
+                        <legend>Fyll i formuläret</legend>
+                        <label for="forname">Förnamn:</label>
+                        <input type="text" id="forname" name="forname" minlength="4" required>
+                        <br>
+                        <label for="aftername">Efternamn:</label>
+                        <input type="text" id="aftername" name="aftername" minlength="4" required>
+                        <br>
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="phonenumber">Mobilnummer:</label>
+                        <input type="number" id="phonenumber" name="mobilnummer">
+                        <br>
+                        <label for="comment" class="block">Lämna ett meddelande:</label>
+                        <br>
+                        <textarea name="comment" id="comment" cols="30" rows="10" minlength="10"></textarea>
+                        <br>
+                        <button type="submit"><span>Skicka</span></button>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div class="item center">
+                <h2>Kontakta Frostpalatset</h2>
+                <p><strong>Adress:</strong> Marknadsvägen 63, Kiruna</p>
+                <p><strong>Tel:</strong>+46 980 668 00</p>
+                <p><strong>E-post:</strong>info@frostpalatset.com</p>
+                <p><strong>Öppettider:</strong> Receptionen öppen dygnet runt</p>
+                <p><strong>Webb:</strong>Frostpalatset.com</p>
+                <p><strong>Receptionen:</strong> Dygnet runt (24/7)</p>
+                <p><strong>Incheckning:</strong> Från kl. 15:00</p>
+                <h3>Parkering</h3>
+                <p>Garage finns i anslutning till hotellet (250 kr/dygn, bokas i förväg).</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="center">Frostpalatset | Marknadsvägen 63 | 12364 Kiruna 01-43 98 76</p>
+    </footer>
+</body>
+
+</html>
